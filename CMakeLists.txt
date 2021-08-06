@@ -11,5 +11,8 @@ file(GLOB SOURCES "src/*.cpp")
 include_directories(${Boost_INCLUDE_DIR})
 add_executable(client src/client.cpp)
 add_executable(iterativeServer src/iterativeServer.cpp)
+add_executable(asyncServer src/asyncServer.cpp)
+
 target_link_libraries(client ${Boost_LIBRARIES})
 target_link_libraries(iterativeServer ${Boost_LIBRARIES})
+target_link_libraries(asyncServer ${Boost_LIBRARIES})
